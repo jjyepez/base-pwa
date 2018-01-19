@@ -1,6 +1,6 @@
 .HomeLayout {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-}
-.HomeLayout header {
-  padding: 2rem;
+  overflow: hidden;
 }

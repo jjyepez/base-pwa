@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('path')
 
 module.exports = {
   entry: {
@@ -32,11 +32,11 @@ module.exports = {
         use: ['style-loader', 'css-loader']
       },
       {
-        test: /\.(jpg|png|gif|svg)$/,
+        test: /\.(ico|jpg|png|gif|svg)$/,
         use: {
           loader: 'url-loader',
           options: {
-            limit: 1000000,
+            limit: 100,
             fallback: 'file-loader'
             // --- name: 'img/[name].[hash].[ext]',
           }

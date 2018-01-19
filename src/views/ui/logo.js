@@ -5,7 +5,7 @@ import logo  from '../../assets/img/logo.png'
 const Logo = props => (
   <div className="Logo">
     <img src={logo} width={100} height={100}/>
-    <div class="Logo-sombra"></div>
+    <div className="Logo-sombra"></div>
   </div>
 )
 

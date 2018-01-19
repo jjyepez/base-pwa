@@ -1,0 +1,8 @@
+import './img/iconos/favicon.ico'
+import './img/iconos/logo16x16.png'
+import './img/iconos/logo24x24.png'
+import './img/iconos/logo32x32.png'
+import './img/iconos/logo64x64.png'
+import './img/iconos/logo128x128.png'
+import './img/iconos/logo256x256.png'
+import './img/iconos/logo.svg'

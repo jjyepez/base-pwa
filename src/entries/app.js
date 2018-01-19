@@ -1,8 +1,9 @@
-import React 	  from 'react'
+import React    from 'react'
 import ReactDOM from 'react-dom'
 
-import App		  from '../views/containers/app'
-import '../assets/css/style.css'
+import App      from '../views/containers/app'
+
+import '../assets/import-assets.js'
 
 const $appContainer = document.getElementById( 'app-container' )
 

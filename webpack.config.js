@@ -1,6 +1,6 @@
-const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const path               = require('path')
+const ExtractTextPlugin  = require('extract-text-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 
 module.exports = (env) => {
@@ -62,13 +62,13 @@ module.exports = (env) => {
           })
         },
         {
-          test: /\.(jpg|png|gif|svg)$/,
+          test: /\.(ico|jpg|png|gif|svg)$/,
           use: {
             loader: 'url-loader',
             options: {
-              limit: 10000,
+              limit: 100,
               fallback: 'file-loader',
-              name: 'images/[name].[hash].[ext]',
+              name: 'images/[name].[ext]',
             }
           }
         },

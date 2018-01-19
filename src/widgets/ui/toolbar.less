@@ -1,0 +1,49 @@
+// out: toolbar.css,compress:true
+
+.Toolbar {
+  position        : fixed;
+  display         : flex;
+  flex-direction  : row;
+  background-color: #113399;
+  color           : #fff;
+  width           : 100%;
+  min-height      : 50px;
+  z-index: 100;
+
+  &-left, &-center, &-right {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    min-width      : 50px;
+    vertical-align : middle;
+    text-align     : center;
+  }
+  &-center {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    & .title {
+      font-size: 1.25rem;
+
+      &-sub {
+        font-size: 1rem;
+      }
+    }
+    & .subtitle {
+      padding-top: .25rem;
+      font-size  : .75rem;
+    }
+  }
+}
+
+@media screen and (max-width:600px) {
+  .Toolbar {
+    min-height: 60px;
+  }
+}
+@media screen and (min-width:601px) {
+  .Toolbar {
+    min-height: 70px;
+  }
+}
