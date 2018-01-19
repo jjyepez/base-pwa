@@ -10,18 +10,20 @@ import Contenido from '../../widgets/containers/contenido'
 
 const HomeLayout = props => {
   return(
-    <div className = "HomeLayout">
-      <Toolbar
-        left     = {iconoMenu}
-        title    = "Mi Aplicación"
-        subTitle = "Ejemplo"
-        right    = {iconoMore}
-      />
-      <Contenido>
+    <Contenido>
+      <div className = "HomeLayout">
         {props.children}
-      </Contenido>
-    </div>
+      </div>
+    </Contenido>
   )
 }
 
 export default HomeLayout
+
+
+      // <Toolbar
+      //   left     = {iconoMenu}
+      //   title    = "Mi Aplicación"
+      //   subTitle = "Ejemplo"
+      //   right    = {iconoMore}
+      // />
