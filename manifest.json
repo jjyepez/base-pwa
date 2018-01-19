@@ -1,23 +1,15 @@
 {
   "name"                : "Base App OnsenUI",
-  "short_name"          : "base-app-onsenui",
+  "short_name"          : "Base App",
   "description"         : "Esta es una aplicacion demostrativa de React + OnsenUI + PWAs",
   "lang"                : "es-VE",
-  "dir"                 : "ltr",
+  "dir"                 : "auto",
   "start_url"           : "./index.html",
+  "scope"               : "./",
   "display"             : "standalone",
-  "background-color"    : "#fefefe",
   "orientation"         : "portrait",
-  "theme-color"         : "portrait",
-  "related_applications": [
-    {
-      "platform": "web"
-    },
-    {
-      "platform": "play",
-      "url"     : "https://play.google.com/store/apps/details?id=com.google.samples.apps.iosched"
-    }
-  ],
+  "background_color"    : "#fefefe",
+  "theme_color"         : "#113399",
   "icons": [
   {
     "src"  : "./dist/images/favicon.ico",
@@ -48,8 +40,11 @@
     "src"  : "./dist/images/logo128x128.png",
     "sizes": "72x72 96x96 128x128",
     "type" : "image/png"
-  },{
+  },
+  {
     "src"  : "./dist/images/logo.svg",
     "sizes": "144x144 168x168 192x192 256x256",
-  }]
+    "type" : "image/svg+xml"
+  }
+  ]
 }
